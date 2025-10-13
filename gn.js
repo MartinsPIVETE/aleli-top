@@ -3,7 +3,6 @@ let currentInput = '';
 let currentOperator = '';
 
 function appendNumber(number) {
-   
     if (currentInput === '0' && number !== '.') {
         currentInput = number;
     } else {
@@ -13,7 +12,6 @@ function appendNumber(number) {
 }
 
 function appendOperator(operator) {
-
     if (currentInput === '' && operator !== '.') return;
 
     if (['+', '-', '*', '/'].includes(currentInput[currentInput.length - 1])) {
@@ -29,7 +27,7 @@ function calculate() {
         if (!Number.isInteger(result)) {
             result = result.toFixed(2); 
         }
-        currentInput = result;
+        currentInput = result.toString();
         display.textContent = currentInput;
     } catch {
         display.textContent = 'Erro';
