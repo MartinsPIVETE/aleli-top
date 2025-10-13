@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora alek-top</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator">
-        <div class="display" id="display">0</div>
+
+        <div class="display" id="display"></div>
         <div class="buttons">
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button onclick="appendOperator('/')">/</button>
-
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button onclick="appendOperator('*')">*</button>
-
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
-            <button onclick="appendOperator('-')">-</button>
-
-            <button onclick="appendNumber('0')">0</button>
-            <button onclick="appendOperator('.')">.</button>
-            <button class="equals" onclick="calculate()">=</button>
-            <button onclick="appendOperator('+')">+</button>
-
-            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="button light-gray" onclick="clearDisplay()">C</button>
+            <button class="button light-gray" onclick="appendOperator('%')">%</button>
+            <button class="button light-gray" onclick="appendOperator('.')">.</button>
+            <button class="button orange" onclick="appendOperator('/')">/</button>
+            <button class="button dark-gray" onclick="appendNumber('7')">7</button>
+            <button class="button dark-gray" onclick="appendNumber('8')">8</button>
+            <button class="button dark-gray" onclick="appendNumber('9')">9</button>
+            <button class="button orange" onclick="appendOperator('x')">x</button>
+            <button class="button dark-gray" onclick="appendNumber('4')">4</button>
+            <button class="button dark-gray" onclick="appendNumber('5')">5</button>
+            <button class="button dark-gray" onclick="appendNumber('6')">6</button>
+            <button class="button orange" onclick="appendOperator('-')">-</button>
+            <button class="button dark-gray" onclick="appendNumber('1')">1</button>
+            <button class="button dark-gray" onclick="appendNumber('2')">2</button>
+            <button class="button dark-gray" onclick="appendNumber('3')">3</button>
+            <button class="button orange" onclick="appendOperator('+')">+</button>
+            <button class="button dark-gray wide" onclick="appendNumber('0')">0</button>
+            <button class="button orange" onclick="calculate()">=</button>
         </div>
     </div>
-
-    <script src="calculadora.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
