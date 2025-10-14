@@ -1,96 +1,54 @@
-*{
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
-body{
-  background: #121212;
+.container {
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container{
-  background-color: #fafafa;
-  border-radius: 14px;
-  margin: 14px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 3px 5px rgba(0,0,0, 0.5); 
-  overflow: hidden;
-}
-
-.header{
-  background: linear-gradient(120deg, #868e92 0%, #00d9ff 100%);
-  padding: 24px;
-  text-align: center;
-  color: #FFF;
-}
-
-.form{
-  padding: 18px;
-}
-
-.form-content{
-  margin-bottom: 8px;
-  padding-bottom: 18px;
-  position: relative;
-}
-
-.form-content label{
-  display: inline-block;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-
-.form-content input{
-  display: block;
-  width: 100%;
+  max-width: 400px;
+  background: white;
+  margin: 50px auto;
+  padding: 30px;
   border-radius: 8px;
-  padding: 8px;
-  border: 2px solid #dfdfdf;
-  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-content .help-text{ 
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  visibility: hidden;
-  font-size: 12px;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.form button{
-  background-color: #00c3ff;
-  color: #FFF;
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+form input {
   width: 100%;
-  border-radius: 14px;
   padding: 10px;
-  border: 0;
-  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
   cursor: pointer;
-  margin-top: 14px;
-  font-weight: 700;
-  transition: background-color 0.3s;
+  border-radius: 4px;
 }
 
-.form button:hover {
-    background-color: #0099cc;
+button:hover {
+  background-color: #45a049;
 }
 
-.form-content.error input{
-  border-color: #ff3b25;
-}
-
-.form-content.error .help-text{
-  color: #ff3b25;
-  visibility: visible;
-}
-
-.form-content.success input {
-    border-color: #2ecc71;
+#mensagem {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
 }
