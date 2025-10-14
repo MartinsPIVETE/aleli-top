@@ -1,73 +1,96 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    margin: 0;
-    font-family: Arial, sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.calculator {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    /* Sombra mais marcada para simular um contorno */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
-    text-align: center;
-    width: 320px;
+body{
+  background: #121212;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-    margin-bottom: 20px;
+.container{
+  background-color: #fafafa;
+  border-radius: 14px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 3px 5px rgba(0,0,0, 0.5); 
+  overflow: hidden;
 }
 
-.display {
-    background-color: #222;
-    color: #fff;
-    font-size: 2em;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    min-height: 50px;
-    text-align: right;
+.header{
+  background: linear-gradient(120deg, #868e92 0%, #00d9ff 100%);
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.form{
+  padding: 18px;
 }
 
-.button {
-    border: none;
-    border-radius: 50%;
-    padding: 20px;
-    font-size: 1.5em;
-    cursor: pointer;
+.form-content{
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
 }
 
-.button.dark-gray {
-    background-color: #333;
-    color: #fff;
+.form-content label{
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 500;
 }
 
-.button.orange {
-    background-color: #12f3556c;
-    color: #fff;
+.form-content input{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
+  font-size: 14px;
 }
 
-.button.light-gray {
-    background-color: #d3d3d3;
-    color: #000;
+.form-content .help-text{ 
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  visibility: hidden;
+  font-size: 12px;
 }
 
-.button.wide {
-    grid-column: span 2;
-    border-radius: 50px;
+.form button{
+  background-color: #00c3ff;
+  color: #FFF;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+  font-weight: 700;
+  transition: background-color 0.3s;
 }
 
-.button:active {
-    opacity: 0.8;
+.form button:hover {
+    background-color: #0099cc;
 }
 
+.form-content.error input{
+  border-color: #ff3b25;
+}
+
+.form-content.error .help-text{
+  color: #ff3b25;
+  visibility: visible;
+}
+
+.form-content.success input {
+    border-color: #2ecc71;
+}
